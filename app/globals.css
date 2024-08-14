@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* form */
+  .form_label {
+    @apply block mb-1.5 capitalize font-medium text-sm text-gray-900
+  }
+
+  .form_input {
+    @apply appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 placeholder:capitalize placeholder:text-sm focus:outline-none focus:ring-sky-400 focus:border-sky-400 focus:z-10 sm:text-sm
+  }
+
+  .form_textarea {
+    @apply h-20 resize-none appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 placeholder:capitalize placeholder:text-sm focus:outline-none focus:ring-sky-400 focus:border-sky-400 focus:z-10 sm:text-sm
+  }
+
+  .form_link {
+    @apply font-medium text-sky-400 hover:text-sky-500
+  }
+
+  .auth_btn {
+    @apply relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-sky-400 hover:bg-sky-500 disabled:bg-gray-500 focus:outline-none transition-all duration-300
+  }
+
+  /* conversations */
+  .conversation_link {
+    @apply flex items-center justify-center sm:justify-between md:justify-start px-3 py-2 text-sm transition duration-300 ease-in-out cursor-pointer hover:bg-gray-100 focus:outline-none
+  }
+
+  .conversation_span {
+    @apply block ml-2 font-semibold text-gray-600
+  }
+
+  /* message */
+  .message_body {
+    @apply max-w-xl px-4 py-2 text-gray-700 bg-gray-100 rounded shadow
+  }
+
+  /* images */
+  .round_image_container {
+    @apply relative h-10 w-10 rounded-full
+  }
+
+  .round_image {
+    @apply object-cover rounded-full
+  }
+}
